@@ -1,15 +1,1 @@
-export ZONE=
 
-gcloud compute ssh centos-clean --zone=$ZONE --quiet
-
-gcloud config set compute/zone $ZONE
-
-gcloud init --no-launch-browser
-
-export USER2=
-
-export PROJECT_ID2=
-
-curl -LO raw.githubusercontent.com/Techcps/GSP-Short-Trick/master/Configuring%20IAM%20Permissions%20with%20gcloud/techcps.sh
-sudo chmod +x techcps.sh
-./techcps.sh
